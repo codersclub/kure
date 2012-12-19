@@ -1,17 +1,24 @@
-div#header {
+html, body {
+  margin: 0;
+	padding: 0;
+}
+header {
+
   height:        30px;
   margin-bottom: 5px;
   width:         100%;
+  padding:       5px 0;
+  background:    #F8F8F8;
 }
 
-div#header-left {
+#header-left {
   float:      left;
   height:     30px;
   text-align: right;
   width:      30%;
 }
 
-div#header-right {
+#header-right {
   float:      left;
   height:     30px;
   position:   relative;
@@ -19,7 +26,7 @@ div#header-right {
   width:      40%;
 }
 
-div#content {
+#content {
   /*box-shadow: 0 0 9px #ddd; /* uncomment for a nice shadow around entries */
   margin:     auto;
   min-height: 90%;
@@ -46,17 +53,25 @@ div.right-split {
   width:        50%;
 }
 
-div#footer, a.footer:link, a.footer:visited {
+footer {
   color:       #7f7f7f;
+/*
   height:      10px;
+*/
   font-family: "trebuchet ms", arial;
   font-size:   10px;
   margin:      auto;
   text-align:  center;
   width:       100%;
+  padding:	8px 0;
+  background:	#F8F8F8;
+}
+footer a:link, footer a:visited {
+  color:       #7f7f7f;
 }
 
-div.entry {
+article {
+  /*box-shadow: 0 0 9px #ddd; /* uncomment for a nice shadow around each entry */
   margin-bottom: 20px;
 }
 
