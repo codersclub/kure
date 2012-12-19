@@ -160,4 +160,3 @@ try{
 } catch(CannotReadFileException $e) {
   Engine::quit($language->cant_read_template, $e->getMessage());
 }
-?>

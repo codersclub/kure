@@ -160,5 +160,3 @@ function exception_handler($e) {
     Engine::error($language->unknown_exception);
   Engine::error($error, $e->getMessage() . ' ' . $e->getFile() . ':' . $e->getLine());
 }
-
-?>

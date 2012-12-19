@@ -77,5 +77,3 @@ if($GLOBALS['plugging'] && isset($_GET['admin'])) {
     $rack['kure']['page_top'] .= '<a href="?admin=logout">logout</a>';
   }
 }
-
-?>

@@ -7,5 +7,3 @@ class Language extends Config {
   }
 
 }
-
-?>

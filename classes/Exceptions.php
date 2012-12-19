@@ -5,5 +5,3 @@ class CannotReadFileException       extends RuntimeException {};
 class CannotWriteFileException      extends RuntimeException {};
 class PropertyAccessException       extends LogicException {};
 class PropertyDoesNotExistException extends LogicException {};
-
-?>
