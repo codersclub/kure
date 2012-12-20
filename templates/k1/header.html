@@ -2,12 +2,16 @@
 <html>
 	<head>
 		<title>{TITLE}</title>
-		<link rel="stylesheet" type="text/css" href="templates/k1/style.css">{HOOK:KURE-HEAD}
+		<link rel="stylesheet" type="text/css" href="templates/{TEMPLATE}/style.css">
+		{HOOK:KURE-HEAD}
 	</head>
-	<body>{HOOK:KURE-TOP}
+	<body>
+		{HOOK:KURE-TOP}
 		<header>
 			<div id="header-left">
-				{HOOK:KURE-TITLE_BEFORE}<a id="site-title" href="?">{TITLE}</a>{HOOK:KURE-TITLE_AFTER}
+				{HOOK:KURE-TITLE_BEFORE}
+				<a id="site-title" href="?">{TITLE}</a>
+				{HOOK:KURE-TITLE_AFTER}
 			</div>
 			<div id="header-right">
 				<span id="site-subtitle">{SUBTITLE}</span>

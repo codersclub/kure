@@ -1,8 +1,10 @@
 			<article>
 				{HOOK:ENTRY-TOP}
-				<h1>{ENTRYTITLE}</h1>
+				<h1><a href="{ENTRYADDRESS}">{ENTRYTITLE}</a></h1>
 				{HOOK:ENTRY-TITLE_AFTER}
-				<div class="entry-date">{ENTRYDAY} {ENTRYMONTH} {ENTRYYEAR}</div>
+				<div class="entry-date">
+					{ENTRYDAY} {ENTRYMONTH} {ENTRYYEAR}
+				</div>
 				<div class="content">
 					{ENTRYCONTENT}
 				</div>

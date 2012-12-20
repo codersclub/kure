@@ -15,6 +15,7 @@ class Template {
     $vars['{TITLE}']    = $config->blog_name;
     $vars['{SUBTITLE}'] = $config->blog_sub;
     $vars['{VERSION}']  = $config->version;
+    $vars['{TEMPLATE}'] = $config->template;
 
     $html = str_replace(array_keys($vars), $vars, $html);
 

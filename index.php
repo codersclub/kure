@@ -117,8 +117,10 @@ while($entry_handler->has_next()) {
                          '{ENTRYCONTENT}' => $entry->content
                         );
 
+  $tpl = isset($_GET['e'])?'entry':'entrylist';
+
   try {
-    Template::run('entry', $template_vars);
+    Template::run($tpl, $template_vars);
   } catch(CannotFindFileException $e) {
     Engine::quit($language->cant_find_template, $e->getMessage());
   } catch(CannotReadFileException $e) {
@@ -130,13 +132,13 @@ while($entry_handler->has_next()) {
 if(!isset($_GET['page']))
   $_GET['page'] = 0; // default to page 0
 
-print "\t\t\t" . '<div class="split">' . "\n";
+print '<div class="navitem">' . "\n";
 
 // Display "previous entries" / "more recent entries" links if necessary
 if(($_GET['page'] + 1) * $config->entries_per_page < $entry_handler->total_entries) {
 
   $last = '?page=' . ($_GET['page'] + 1);
-  print "\t\t\t\t" . '<div class="left-split"><a class="navitem" href="' . $last . '">less recent</a></div>' . "\n";
+  print '<div class="left"><a href="' . $last . '">less recent</a></div>' . "\n";
 
 }
 
@@ -147,7 +149,7 @@ if($_GET['page'] != 0) {
   else
     $next = '?page=' . ($_GET['page'] - 1);
 
-  print "\t\t\t\t" . '<div class="right-split"><a class="navitem" href="' . $next . '"> more recent</a></div>' . "\n";
+  print '<div class="right"><a href="' . $next . '"> more recent</a></div>' . "\n";
 
 }
 
