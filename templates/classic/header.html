@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{TITLE}</title>
+		<link rel="stylesheet" type="text/css" href="templates/{TEMPLATE}/style.css">
+		{HOOK:KURE-HEAD}
+	</head>
+	<body>
+		{HOOK:KURE-TOP}
+		<header>
+			<div id="header-left">
+				{HOOK:KURE-TITLE_BEFORE}
+				<a id="site-title" href="?">{TITLE}</a>
+				{HOOK:KURE-TITLE_AFTER}
+			</div>
+			<div id="header-right">
+				<span id="site-subtitle">{SUBTITLE}</span>
+			</div>
+		</header>
+		<section id="content">{HOOK:KURE-PAGE_TOP}
